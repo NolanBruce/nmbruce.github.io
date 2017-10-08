@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "nmbruce.github.io.data.unityweb",
+"asmCodeUrl": "nmbruce.github.io.asm.code.unityweb",
+"asmMemoryUrl": "nmbruce.github.io.asm.memory.unityweb",
+"asmFrameworkUrl": "nmbruce.github.io.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
