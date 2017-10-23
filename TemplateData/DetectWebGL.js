@@ -9,10 +9,9 @@
     //Get WebGLRenderingContext from window
     var rendcon = !! window.WebGLRenderingContext;
     //
-    if (rendcon && gl) {
-    	window.alert("Good to go.");
-    } else {
-    	window.alert("No good, man.");
+    if (!rendcon || !gl) {
+    	window.alert("Small Worlds cannot run because" + 
+            "WebGL is not supported on your device.");
     }
   }
 
