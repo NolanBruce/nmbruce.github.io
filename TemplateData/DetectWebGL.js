@@ -11,7 +11,7 @@
     //if webgl context or rendering context
     if (rendcon || gl) {
     	if (confirm("Small Worlds cannot run because" + 
-            "WebGL is not supported on your device.") {
+            "WebGL is not supported on your device.")) {
     		window.location = "https://etx.asu.edu/";
     	} else {
     		window.location = "https://etx.asu.edu/";
