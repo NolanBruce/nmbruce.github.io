@@ -1,4 +1,4 @@
-﻿function DetectWebGL() {
+﻿function DetectWebGL(e, t, r) {
     //Create canvas for getting context
     var canvas = document.createElement("canvas");
     //Get webgl Context from canvas
@@ -17,6 +17,5 @@
     		window.location = "https://etx.asu.edu/";
     	}
     }
+    t();
   }
-
-  DetectWebGL();
