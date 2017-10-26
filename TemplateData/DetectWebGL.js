@@ -9,10 +9,12 @@
     //Get WebGLRenderingContext from window
     var rendcon = !! window.WebGLRenderingContext;
     //if webgl context or rendering context
-    if (!rendcon || !gl) {
-    	window.alert("Small Worlds cannot run because" + 
-            "WebGL is not supported on your device.");
+    if (rendcon || gl) {
+    	if (onfirm("Small Worlds cannot run because" + 
+            "WebGL is not supported on your device.") {
+    		window.location = "https://etx.asu.edu/";
+    	} else {
+    		window.location = "https://etx.asu.edu/";
+    	}
     }
   }
-
-  DetectWebGL();
