@@ -1,4 +1,4 @@
-﻿function DetectWebGL(e, t, r) {
+﻿function DetectWebGL() {
     //Create canvas for getting context
     var canvas = document.createElement("canvas");
     //Get webgl Context from canvas
@@ -18,3 +18,5 @@
     	}
     }
   }
+
+  DetectWebGL();
