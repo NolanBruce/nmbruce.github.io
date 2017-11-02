@@ -1,4 +1,8 @@
-﻿function DetectWebGL(e, t, r) {
+
+//NB: 11/02/2017
+//script that checks for WebGL compatibility. Informs user if their
+//device is incompatible and redirects them to the ETX website.
+function DetectWebGL(e, t, r) {
     //Create canvas for getting context
     var canvas = document.createElement("canvas");
     //Get webgl Context from canvas
@@ -17,5 +21,6 @@
     		window.location = "https://etx.asu.edu/";
     	}
     }
+    //calls passed function
     t();
   }
