@@ -14,9 +14,8 @@
     </script>
     <script>
     	function checkLandscape() {
-    		var landscape = false;
 	    	if(window.orientation !=-90 && window.orientation != 90) {
-	    		if(confirm('Please rotate screen to landscape mode.')) {
+	    		if(confirm('Please rotate screen to landscape mode. Current orientation: ' + window.orientation +'.')) {
 	    			checkLandscape();
 	    		}
 	    	}
