@@ -16,7 +16,7 @@
     	function checkLandscape() {
 	    	if(window.orientation !=-90 && window.orientation != 90) {
 	    		if(confirm('Please rotate screen to landscape mode. Current orientation: ' + window.orientation +'.')) {
-	    			checkLandscape();
+	    			location.reload();
 	    		}
 	    	}
     	}
