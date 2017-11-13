@@ -10,17 +10,12 @@
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
     <script>
-    	window.orientation = -90;
+    	if(window.orientation !=-90 && window.orientation != 90) {
+	    	if(confirm('Please rotate screen to landscape mode. Current orientation: ' + window.orientation +'.')) {
+	    		location.reload();
+	    	}
     </script>
     <script>
-    	function checkLandscape() {
-	    	if(window.orientation !=-90 && window.orientation != 90) {
-	    		if(confirm('Please rotate screen to landscape mode. Current orientation: ' + window.orientation +'.')) {
-	    			location.reload();
-	    		}
-	    	}
-    	}
-    	checkLandscape();
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/nmbruce.github.io.json", {onProgress: UnityProgress});
     </script>
   </head>
