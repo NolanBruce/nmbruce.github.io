@@ -10,8 +10,8 @@
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
     <script>
-    	if(window.orientation && window.orientation !=-90 && window.orientation != 90) {
-	    	if(confirm('Please rotate screen to landscape mode. Current orientation: ' + window.orientation +'.')) {
+    	if(typeof window.orientation !== 'undefined' && window.orientation !=-90 && window.orientation != 90) {
+	    	if(confirm('Portrait orientation not supported. Please rotate screen to landscape mode and then.')) {
 	    		location.reload();
 	    	}
 	    }
