@@ -13,6 +13,15 @@
     	window.orientation = -90;
     </script>
     <script>
+    	function checkLandscape() {
+    		var landscape = false;
+	    	if(window.orientation !=-90 && window.orientation != 90) {
+	    		if(confirm('Please rotate screen to landscape mode.')) {
+	    			checkLandscape();
+	    		}
+	    	}
+    	}
+    	checkLandscape();
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/nmbruce.github.io.json", {onProgress: UnityProgress});
     </script>
   </head>
