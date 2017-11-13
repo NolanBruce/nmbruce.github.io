@@ -10,9 +10,7 @@
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
     <script>
-    	var AutoLandscape = function() {
-    		screen.orientation.lock('landscape');
-    	}
+    	screen.orientation.lock('landscape');
     </script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/nmbruce.github.io.json", {onProgress: UnityProgress});
