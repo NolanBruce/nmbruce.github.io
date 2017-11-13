@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
+    <!--NB: 11/13/2017-->
+    <!--Added script to confirm landscape orientation before loading game instance-->
     <script>
-    	if(typeof window.orientation !== 'undefined' && window.orientation !=-90 && window.orientation != 90) {
-	    	if(confirm('Portrait orientation not supported. Please rotate screen to landscape mode and then.')) {
-	    		location.reload();
-	    	}
-	    }
+      if(typeof window.orientation !== 'undefined' && window.orientation !=-90 && window.orientation != 90) {
+        if(confirm('Portrait orientation not supported. Please rotate screen to landscape mode and then click "OK".')) {
+          location.reload();
+        }
+      }
     </script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/nmbruce.github.io.json", {onProgress: UnityProgress});
