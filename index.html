@@ -15,7 +15,7 @@
       function detectOrientation() {
         alert(navigator.userAgent.toLowerCase());
         if (typeof window.orientation !== 'undefined') { 
-        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        if (navigator.userAgent.toLowerCase().indexOf('fxios') > -1) {
           alert("You're using firefox.");
         } else if(window.orientation !=-90 && window.orientation != 90) {
           
