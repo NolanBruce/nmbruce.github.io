@@ -14,7 +14,9 @@
     <script>
       if (typeof window.orientation !== 'undefined') { 
         if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1 || navigator.userAgent.toLowerCase().indexOf('fxios') > -1) {
-            //do nothing
+            if(screen.window.orientation == 0 || screen.window.orientation == 180){
+              alert("Change to landscape");
+            }
         } else if(window.orientation !=-90 && window.orientation != 90) {
           if(confirm('Portrait orientation not supported. Please rotate screen to landscape mode and then click "OK".')) {
             location.reload();
