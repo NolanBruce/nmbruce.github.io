@@ -12,17 +12,15 @@
     <!--NB: 11/13/2017-->
     <!--Added script to confirm landscape orientation before loading game instance-->
     <script>
-      function detectOrientation() {
-        alert(navigator.userAgent.toLowerCase());
-        if (typeof window.orientation !== 'undefined') { 
-        if (navigator.userAgent.toLowerCase().indexOf('fxios') > -1) {
-          alert("You're using firefox.");
+      if (typeof window.orientation !== 'undefined') { 
+        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1 || navigator.userAgent.toLowerCase().indexOf('fxios') > -1) {
+            screen.orientation.lock('portrait');
         } else if(window.orientation !=-90 && window.orientation != 90) {
-          
+          if(confirm('Portrait orientation not supported. Please rotate screen to landscape mode and then click "OK".')) {
+            location.reload();
+          }
         }
       }
-      }
-      detectOrientation();
     </script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/nmbruce.github.io.json", {onProgress: UnityProgress});
