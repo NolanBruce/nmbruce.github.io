@@ -13,13 +13,12 @@
     <!--Added script to confirm landscape orientation before loading game instance-->
     <script>
       function detectOrientation() {
+        alert(navigator.userAgent.toLowerCase());
         if (typeof window.orientation !== 'undefined') { 
         if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
           alert("You're using firefox.");
         } else if(window.orientation !=-90 && window.orientation != 90) {
-          if(confirm('Portrait orientation not supported. Please rotate screen to landscape mode and then click "OK".')) {
-            setTimeout(detectOrientation(), 5000);
-          }
+          
         }
       }
       }
