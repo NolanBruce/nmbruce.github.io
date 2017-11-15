@@ -18,7 +18,7 @@
           alert("You're using firefox.");
         } else if(window.orientation !=-90 && window.orientation != 90) {
           if(confirm('Portrait orientation not supported. Please rotate screen to landscape mode and then click "OK".')) {
-            detectOrientation();
+            setTimeout(detectOrientation(), 2000);
           }
         }
       }
