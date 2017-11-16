@@ -8,12 +8,7 @@
 	<script src="TemplateData/ucapisupportfiles.js"> </script>
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>  
-    <!--NB: 11/13/2017-->
-    <script src="TemplateData/checkOrientation.js"> </script>
     <script src="Build/UnityLoader.js"></script>
-    <!--NB: 11/13/2017-->
-    <!--Added script to confirm landscape orientation before loading game instance-->
-    <script>checkOrientation();</script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/nmbruce.github.io.json", {onProgress: UnityProgress});
     </script>
