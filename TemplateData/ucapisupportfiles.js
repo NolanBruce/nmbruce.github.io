@@ -751,7 +751,9 @@ jQuery.extend({
 			return obj + "";
 		}
 		// Support: Android < 4.0, iOS < 6 (functionish RegExp)
-		
+		return typeof obj === "object" || typeof obj === "function" ?
+			class2type[ toString.call(obj) ] || "object" :
+			typeof obj;
 	},
 
 	// Evaluates a script in a global context
@@ -4418,7 +4420,7 @@ var rcheckableType = (/^(?:checkbox|radio)$/i);
 
 	// Support: Safari 5.1, iOS 5.1, Android 4.x, Android 2.3
 	// old WebKit doesn't clone checked state correctly in fragments
-	support.checkClone = div.cloneNode( true ).cloneNode( true ).lastChild.checked;
+	
 
 	// Make sure textarea (and checkbox) defaultValue is properly cloned
 	// Support: IE9-IE11+
