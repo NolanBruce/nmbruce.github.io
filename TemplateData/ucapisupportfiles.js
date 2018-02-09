@@ -5937,19 +5937,7 @@ function curCSS( elem, name, computed ) {
 		// this is against the CSSOM draft spec: http://dev.w3.org/csswg/cssom/#resolved-values
 		if ( rnumnonpx.test( ret ) && rmargin.test( name ) ) {
 
-			// Remember the original values
-			width = style.width;
-			minWidth = style.minWidth;
-			maxWidth = style.maxWidth;
-
-			// Put in the new values to get a computed value out
-			style.minWidth = style.maxWidth = style.width = ret;
-			ret = computed.width;
-
-			// Revert the changed values
-			style.width = width;
-			style.minWidth = minWidth;
-			style.maxWidth = maxWidth;
+			
 		}
 	}
 
@@ -13264,7 +13252,9 @@ define('api/snapshot/Transporter',['jquery',
                 case SimCapiMessage.TYPES.INITIAL_SETUP_COMPLETE:
                     handleInitialSetupComplete(message);
                     break;
-                
+                case SimCapiMessage.TYPES.RESIZE_PARENT_CONTAINER_RESPONSE:
+                    handleResizeParentContainerResponse(message);
+                    break;
                 case SimCapiMessage.TYPES.ALLOW_INTERNAL_ACCESS:
                     setDomainToShortform();
                     break;
