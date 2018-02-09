@@ -13264,9 +13264,7 @@ define('api/snapshot/Transporter',['jquery',
                 case SimCapiMessage.TYPES.INITIAL_SETUP_COMPLETE:
                     handleInitialSetupComplete(message);
                     break;
-                case SimCapiMessage.TYPES.RESIZE_PARENT_CONTAINER_RESPONSE:
-                    handleResizeParentContainerResponse(message);
-                    break;
+                
                 case SimCapiMessage.TYPES.ALLOW_INTERNAL_ACCESS:
                     setDomainToShortform();
                     break;
@@ -13665,10 +13663,33 @@ define('api/snapshot/Transporter',['jquery',
         };
 
         this.requestParentContainerResize = function(options, onSuccess) {
-            
+            onSuccess = onSuccess || function() {};
+            var messageId = ++self.lastMessageId;
+            var message = new SimCapiMessage({
+                type: SimCapiMessage.TYPES.RESIZE_PARENT_CONTAINER_REQUEST,
+                handshake: handshake,
+                values: {
+                    messageId: messageId,
+                    width: options.width,
+                    height: options.height
+                }
+            });
+            this.messageCallbacks[messageId] = {
+                onSuccess: onSuccess
+            };
+            if (!handshake.authToken) {
+                pendingMessages.forHandshake.push(message);
+            } else {
+                self.sendMessage(message);
+            }
         };
         var handleResizeParentContainerResponse = function(message) {
-           
+            var messageId = message.values.messageId;
+            var callbacks = self.messageCallbacks[messageId];
+            delete self.messageCallbacks[messageId];
+            if (message.values.responseType === 'success') {
+                callbacks.onSuccess();
+            }
         };
         var setDomainToShortform = function ()
         {
