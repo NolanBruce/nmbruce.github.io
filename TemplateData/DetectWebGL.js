@@ -16,9 +16,9 @@ function DetectWebGL(e, t, r) {
     if (!rendcon || !gl) {
     	if (confirm("Small Worlds cannot run because" + 
             "WebGL is not supported on your device.")) {
-    		window.location = "https://infiniscope.org/";
+    		window.location = "https://etx.asu.edu/";
     	} else {
-    		window.location = "https://infiniscope.org/";
+    		window.location = "https://etx.asu.edu/";
     	}
     }
     //calls passed function
