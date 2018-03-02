@@ -1,9 +1,8 @@
 function fullscreen() {
-	var iframes = setTimeout(document.getElementsByTagName('iframe'), 10000);
-	console.log(iframes);
+	setTimeout(goFull(),10000);
 }
 
 function goFull() {
-	var frame = document.getElementById("aelp");
+	var frame = document.getElementById("simIFrame");
 	frame.requestFullscreen();
 }
