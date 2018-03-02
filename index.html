@@ -16,7 +16,6 @@
       users if there device doesn't support WebGL-->
     <!--NB: 11/13/2017-->
     <script src="TemplateData/checkOrientation.js"> </script>
-    <script src="TemplateData/fullscreen.js"> </script>
     <script src="Build/UnityLoader.js"></script>
     <!--NB: 11/13/2017-->
     <!--Added script to confirm landscape orientation before loading game instance-->
@@ -24,7 +23,6 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/nmbruce.github.io.json", {onProgress: UnityProgress, compatibilityCheck: DetectWebGL});
     </script>
-    <script> window.onload = fullscreen();</script>
   </head>
   <body>
     <div class="webgl-content">
