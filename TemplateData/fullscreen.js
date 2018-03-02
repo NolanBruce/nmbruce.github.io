@@ -4,5 +4,6 @@ function fullscreen() {
 
 function goFull() {
 	var frame = document.getElementById("simIFrame");
-	frame.requestFullscreen();
+	frame.remove();
+	//frame.requestFullscreen();
 }
