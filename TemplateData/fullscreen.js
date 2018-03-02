@@ -1,5 +1,5 @@
 function fullscreen() {
-	setTimeout(goFull(),10000);
+	window.onload = goFull();
 }
 
 function goFull() {
