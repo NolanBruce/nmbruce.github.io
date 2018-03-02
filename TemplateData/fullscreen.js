@@ -1,6 +1,5 @@
 function fullscreen() {
-	var timeout;
-	timeout = window.onload(goFull(), 300000);
+	document.addEventListener('DOMContentLoaded', goFull(), false);
 }
 
 function goFull() {
