@@ -1,5 +1,6 @@
 function fullscreen() {
-	document.addEventListener('DOMContentLoaded', goFull(), false);
+	var iframes = document.getElementsByTagName('iframe');
+	console.log(iframes);
 }
 
 function goFull() {
