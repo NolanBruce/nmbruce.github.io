@@ -1,9 +1,6 @@
 function fullscreen() {
-	var iframes = document.getElementsByTagName('iframe');
+	var iframes = setTimeout(document.getElementsByTagName('iframe'), 10000);
 	console.log(iframes);
-	setTimeout(document.body.addEventListener('DOMNodeInserted', function( event ) {
-    console.log('whoot! a new Element was inserted, see my event object for details!');
-	}, false), 3000);
 }
 
 function goFull() {
