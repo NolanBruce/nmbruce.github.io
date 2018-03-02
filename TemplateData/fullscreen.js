@@ -1,9 +1,9 @@
 function fullscreen() {
 	var iframes = document.getElementsByTagName('iframe');
 	console.log(iframes);
-	window.onload = document.body.addEventListener('DOMNodeInserted', function( event ) {
+	window.setTimoeout(document.body.addEventListener('DOMNodeInserted', function( event ) {
     console.log('whoot! a new Element was inserted, see my event object for details!');
-	}, false);
+	}, false), 3000);
 }
 
 function goFull() {
