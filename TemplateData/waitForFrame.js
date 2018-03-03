@@ -1,4 +1,5 @@
 function waitForFrame() {
+	console.log( $ === jQuery )
 	window.setTimeout(loadScript(), 10000);
 }
 
