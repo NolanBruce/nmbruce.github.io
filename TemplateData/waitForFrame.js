@@ -3,7 +3,7 @@ function waitForFrame() {
 }
 
 function loadScript() {
-	$.getScript('fullscreen.js',function(){
+	$.getScript('TemplateData/fullscreen.js',function(){
 		fullscreen();
 	});
 }
