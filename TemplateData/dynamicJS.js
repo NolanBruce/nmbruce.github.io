@@ -20,5 +20,9 @@ function replacejsfile(oldfilename, newfilename, filetype){
 
 function swapFiles(callback) {
 	replacejsfile("dummyJS.js", "fullscreen.js","js");
+	callLater(callback);
+}
+
+function callLater(callback) {
 	callback();
 }
