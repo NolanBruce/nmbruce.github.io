@@ -1,9 +1,9 @@
 function fullscreen() {
-	goFull();
+		goFull();
 }
 
 function goFull() {
-	var frame = document.getElementById("simIFrame");
-	frame.remove();
+	var frame = document.getElementById("gameContainer");
+	frame.requestFullscreen();
 	//frame.requestFullscreen();
 }
