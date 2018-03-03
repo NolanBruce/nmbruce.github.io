@@ -4,6 +4,6 @@ function fullscreen() {
 
 function goFull() {
 	var frame = document.getElementById("gameContainer");
-	frame.requestFullscreen();
+	frame.webkitRequestFullScreen();
 	//frame.requestFullscreen();
 }
