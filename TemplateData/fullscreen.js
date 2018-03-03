@@ -1,5 +1,5 @@
 function fullscreen() {
-	window.onload = goFull();
+	goFull();
 }
 
 function goFull() {
