@@ -28,6 +28,8 @@ header {
     float: none;
     position: absolute;
     right: 5%;
+    border-style: solid;
+    border-width: 2px;
 }
 .headerContainer .wrapper .nameScoreButtonWrapper .name,
 .headerContainer .wrapper .nameScoreButtonWrapper .score {
