@@ -28,7 +28,6 @@ header {
     float: none;
     position: absolute;
     right: 5%;
-    background: url(nmbruce.github.io/SPR/Menu.png) no-repeat;
 }
 .headerContainer .wrapper .nameScoreButtonWrapper .name,
 .headerContainer .wrapper .nameScoreButtonWrapper .score {
