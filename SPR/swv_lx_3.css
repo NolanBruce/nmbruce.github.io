@@ -38,9 +38,9 @@ header {
     font-weight: 0
 }
 .headerContainer .wrapper .nameScoreButtonWrapper .optionsToggle {
-    width: 0px;
-    height: 0px;
-    background: transparent !important;
+    background: url(https://nmbruce.github.io/SPR/Menu.png) no-repeat;
+    width: 190px;
+    height: 75px;
     color: #3686ff;
     border: none;
     outline: none;
@@ -60,9 +60,6 @@ header {
     font-family: 'Open Sans', sans-serif !important
 }
 .headerContainer .optionsPanel .displayOptionsView button {
-    background: url(https://nmbruce.github.io/SPR/Menu.png) no-repeat;
-    width: 190px;
-    height: 75px;
     font-family: open_sans, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 .headerContainer .optionsPanel .displayOptionsView .navigationOption {
