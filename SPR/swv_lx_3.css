@@ -28,9 +28,6 @@ header {
     float: none;
     position: absolute;
     right: 5%;
-    background: url(https://nmbruce.github.io/SPR/Menu.png) no-repeat;
-    width: 190px;
-    height: 75px;
 }
 .headerContainer .wrapper .nameScoreButtonWrapper .name,
 .headerContainer .wrapper .nameScoreButtonWrapper .score {
@@ -63,6 +60,9 @@ header {
     font-family: 'Open Sans', sans-serif !important
 }
 .headerContainer .optionsPanel .displayOptionsView button {
+    background: url(https://nmbruce.github.io/SPR/Menu.png) no-repeat;
+    width: 190px;
+    height: 75px;
     font-family: open_sans, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 .headerContainer .optionsPanel .displayOptionsView .navigationOption {
