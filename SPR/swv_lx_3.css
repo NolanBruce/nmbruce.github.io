@@ -60,6 +60,7 @@ header {
     font-family: 'Open Sans', sans-serif !important
 }
 .headerContainer .optionsPanel .displayOptionsView button {
+    right: 200px;
     font-family: open_sans, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 .headerContainer .optionsPanel .displayOptionsView .navigationOption {
@@ -88,7 +89,6 @@ header {
 }
 .navigationContainer {
     top: 0px;
-    right: 200px;
     width: auto;
     position: absolute !important
 }
