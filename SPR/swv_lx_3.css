@@ -16,7 +16,8 @@ header {
     z-index: 200;
 }
 .headerContainer .defaultView {
-    height: 50px;
+    height: 100%;
+    width: 100%;
 }
 
 .headerContainer .lessonTitle {
