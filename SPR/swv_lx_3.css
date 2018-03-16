@@ -27,7 +27,7 @@ header {
 .headerContainer .wrapper {
     float: none;
     position: absolute;
-    right: 4%;
+    right: 2%;
 }
 .headerContainer .wrapper .nameScoreButtonWrapper .name,
 .headerContainer .wrapper .nameScoreButtonWrapper .score {
