@@ -27,7 +27,7 @@ header {
 .headerContainer .wrapper {
     float: none;
     position: absolute;
-    right: -15%;
+    right: 4%;
 }
 .headerContainer .wrapper .nameScoreButtonWrapper .name,
 .headerContainer .wrapper .nameScoreButtonWrapper .score {
@@ -38,9 +38,9 @@ header {
     font-weight: 0
 }
 .headerContainer .wrapper .nameScoreButtonWrapper .optionsToggle {
-    background: url(https://nmbruce.github.io/SPR/Menu2.png) no-repeat;
+    background: url(https://nmbruce.github.io/SPR/Menu.png) no-repeat;
     background-size: 100% 100%;
-    width: 300px;
+    width: 150px;
     height: 50px;
     color: #3686ff;
     border: none;
