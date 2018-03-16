@@ -39,8 +39,8 @@ header {
 }
 .headerContainer .wrapper .nameScoreButtonWrapper .optionsToggle {
     background: url(https://nmbruce.github.io/SPR/Menu.png) no-repeat;
-    width: 50%;
-    height: 50%;
+    width: 25%;
+    height: 25%;
     color: #3686ff;
     border: none;
     outline: none;
