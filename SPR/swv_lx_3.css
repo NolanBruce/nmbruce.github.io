@@ -35,10 +35,6 @@ header {
     width: 100%;
     right: 0%;
 }
-.headerContainer .wrapper .nameScoreButtonWrapper {
-    height: 100%;
-    width: 100%;
-}
 .headerContainer .wrapper .nameScoreButtonWrapper .name,
 .headerContainer .wrapper .nameScoreButtonWrapper .score {
     margin-top: 0px;
