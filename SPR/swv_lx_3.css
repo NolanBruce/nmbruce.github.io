@@ -60,6 +60,7 @@ header {
     font-family: 'Open Sans', sans-serif !important
 }
 .headerContainer .optionsPanel .displayOptionsView button {
+    visibility: hidden;
     font-family: open_sans, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 .headerContainer .optionsPanel .displayOptionsView .navigationOption {
