@@ -31,6 +31,8 @@ header {
 .headerContainer .wrapper {
     float: none;
     position: absolute;
+    height: 100%;
+    width: 100%;
     right: 0%;
 }
 .headerContainer .wrapper .nameScoreButtonWrapper {
