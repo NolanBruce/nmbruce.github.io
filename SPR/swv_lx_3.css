@@ -56,7 +56,7 @@ header {
     color: #3686ff;
     border: none;
     outline: none;
-    position: relative;
+    position: absolute;
     z-index: 1000;
 }
 .headerContainer .wrapper .nameScoreButtonWrapper .optionsToggle:hover,
