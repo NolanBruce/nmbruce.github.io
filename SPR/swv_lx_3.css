@@ -72,7 +72,8 @@ header {
     font-family: 'Open Sans', sans-serif !important
 }
 .headerContainer .optionsPanel .displayOptionsView button {
-    visibility: hidden;
+    background: url(https://nmbruce.github.io/SPR/Menu.png) no-repeat;
+    background-size: 100% 100%;
     font-family: open_sans, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 .headerContainer .optionsPanel .displayOptionsView .navigationOption {
