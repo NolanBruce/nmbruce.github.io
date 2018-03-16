@@ -58,6 +58,7 @@ header {
     outline: none;
     position: absolute;
     z-index: 1000;
+    visibility: hidden;
 }
 .headerContainer .wrapper .nameScoreButtonWrapper .optionsToggle:hover,
 .headerContainer .wrapper .nameScoreButtonWrapper .optionsToggle.clicked {
