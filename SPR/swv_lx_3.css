@@ -12,7 +12,7 @@ header {
     font-family: 'Open Sans', sans-serif !important
 }
 .headerContainer {
-    height: 0px;
+    height: 100%;
     z-index: 200;
 }
 .headerContainer .defaultView {
