@@ -15,6 +15,9 @@ header {
     height: 0px;
     z-index: 200;
 }
+.headerContainer .defaultView {
+    height: 50px;
+}
 
 .headerContainer .lessonTitle {
     position: absolute;
