@@ -54,7 +54,7 @@ header {
     width: 8%;
     height: 100%;
     color: #3686ff;
-    border: none;
+    border: 5px solid blue;
     outline: none;
     position: absolute;
     z-index: 1000;
