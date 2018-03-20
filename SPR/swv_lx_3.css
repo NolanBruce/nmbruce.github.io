@@ -500,7 +500,7 @@ aside.minimized .navigationToggle:focus {
   margin-right: auto;
 }
 
-.fullscreen {
+#stage-stage .content .fullscreen {
 	position: absolute;
 	right: 10%;
 	top: 10%;
