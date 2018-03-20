@@ -5,7 +5,7 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 
 .webgl-content. gameContainer { background: #000000; }
 
-.full {
+.fullscreen {
 	position: absolute;
 	right: 10%;
 	top: 10%;
