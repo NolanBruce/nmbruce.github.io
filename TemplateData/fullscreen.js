@@ -28,7 +28,7 @@ function addFullListener() {
 	document.getElementById("gameContainer").addEventListener("click", addButton);
 	var x = document.getElementById("gameContainer");
 	var y;
-	for(int i=0;i<5;i++) {
+	for(i=0;i<5;i++) {
 		y = document.getElementById(x.parentElement.nodeName);
 		console.log("Parent:  " +y);
 
