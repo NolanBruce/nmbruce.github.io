@@ -22,10 +22,14 @@ function goFull() {
 
 	var x = document.getElementById("fullscreen")
 	var y;
-	for(i=0; i<10; i++) {
-		y = x.parentNode.nodeName;
-		console.log(y);
-		x = document.getElementById(y);
-	}
-	
+	document.getElementById("fullButton").style.visibility = 'hidden';
+}
+
+function addFullListener() {
+	document.getElementById("fullButton").style.visibility = 'hidden';
+	document.addEventListener("click", addButton);
+}
+
+function addButton() {
+	document.getElementById("fullButton").style.visibility = 'visibile';
 }
