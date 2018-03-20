@@ -29,6 +29,7 @@ function addFullListener() {
 }
 
 function addButton(e) {
+	console.log("92% of screen width is at least " + window.screen.availWidth-(.08*window.screen.availWidth));
 	console.log("x= " + e.clientX);
 	console.log("y= " + e.clientY);
 
