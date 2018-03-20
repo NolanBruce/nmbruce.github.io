@@ -27,7 +27,7 @@ function goFull() {
 
 function addFullListener() {
 	document.getElementById("fullButton").style.visibility = 'hidden';
-	document.addEventListener("click", addButton);
+	//document.addEventListener("click", addButton);
 }
 
 function addButton() {
