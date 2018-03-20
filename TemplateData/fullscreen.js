@@ -28,7 +28,7 @@ function addFullListener() {
 	document.getElementById("gameContainer").addEventListener("click", addButton);
 }
 
-function addButton() {
+function addButton(e) {
 	console.log("Button ... should be added");
 	document.getElementById("fullButton").style.visibility = 'initial';
 	console.log("x= " + e.clientX);
