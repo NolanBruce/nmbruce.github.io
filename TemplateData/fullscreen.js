@@ -19,15 +19,13 @@ function goFull() {
 	} catch(err) {
 		console.log("webkitRequestFullScreen failed");
 	}
-
-	var x = document.getElementById("fullscreen")
-	var y;
+	
 	document.getElementById("fullButton").style.visibility = 'hidden';
 }
 
 function addFullListener() {
 	document.getElementById("fullButton").style.visibility = 'hidden';
-	//document.addEventListener("click", addButton);
+	document.getElementById("gameContainer").addEventListener("click", addButton);
 }
 
 function addButton() {
