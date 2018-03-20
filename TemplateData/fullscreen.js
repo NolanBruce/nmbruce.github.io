@@ -20,6 +20,13 @@ function goFull() {
 		console.log("webkitRequestFullScreen failed");
 	}
 
-	console.log(document.getElementById("fullscreen").parentElement.nodeName)
+	var x = document.getElementById("fullscreen")
+	var y;
+	for(i=0; i<10; i++) {
+		y = x.parentElement.nodeName;
+		console.log(y);
+		x = document.getElementById(y);
+	}
+}
 	
 }
