@@ -27,6 +27,5 @@ function goFull() {
 		console.log(y);
 		x = document.getElementById(y);
 	}
-}
 	
 }
