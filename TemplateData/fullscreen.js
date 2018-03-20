@@ -29,8 +29,17 @@ function addFullListener() {
 }
 
 function addButton(e) {
-	console.log("Button ... should be added");
-	document.getElementById("fullButton").style.visibility = 'initial';
 	console.log("x= " + e.clientX);
-	console.log("x= " + e.clientY);
+	console.log("y= " + e.clientY);
+
+	if(e.clientY>(window.screen.availHeight-50)) {
+		console.log("High enough for button add");
+	}
+	if(e.clientX>(window.screen.availWidth-(.08*window.screen.availWidth))) {
+		console.log("Right enough for button add");
+	}
+	if(e.clientY>(window.screen.availHeight-50)&&e.clientX>(window.screen.availWidth-(.08*window.screen.availWidth))) {
+		console.log("Button ... should be added");
+		document.getElementById("fullButton").style.visibility = 'initial';
+	}
 }
