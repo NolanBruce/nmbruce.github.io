@@ -30,5 +30,5 @@ function addFullListener() {
 
 function addButton() {
 	console.log("Button ... should be added");
-	document.getElementById("fullButton").style.visibility = 'visibile';
+	document.getElementById("fullButton").style.visibility = 'initial';
 }
