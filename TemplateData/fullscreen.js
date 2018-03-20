@@ -19,7 +19,7 @@ function goFull() {
 	} catch(err) {
 		console.log("webkitRequestFullScreen failed");
 	}
-	
+
 	document.getElementById("fullButton").style.visibility = 'hidden';
 }
 
@@ -29,5 +29,6 @@ function addFullListener() {
 }
 
 function addButton() {
+	console.log("Button ... should be added");
 	document.getElementById("fullButton").style.visibility = 'visibile';
 }
