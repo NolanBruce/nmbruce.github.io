@@ -500,13 +500,14 @@ aside.minimized .navigationToggle:focus {
   margin-right: auto;
 }
 
+/*
 .simIFrame .stageContainer #stage-stage .content .fullscreen {
 	position: absolute;
 	right: 10%;
 	top: 10%;
 	z-index: 22000;
 }
-
+*/
 
 header .optionsPanel .option.logoutOption {
     display: none!important

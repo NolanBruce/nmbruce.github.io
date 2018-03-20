@@ -15,3 +15,10 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 .webgl-content .logo.Dark {background-image: url('etx_white_logo.png');}
 .webgl-content .progress.Dark .empty {background-image: url('progressEmpty.Dark.png');}
 .webgl-content .progress.Dark .full {background-image: url('progressFull.Dark.png');}
+
+.fullscreen {
+	position: absolute;
+	right: 10%;
+	top: 10%;
+	z-index: 22000;
+}
