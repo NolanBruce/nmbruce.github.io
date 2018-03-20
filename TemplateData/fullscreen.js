@@ -32,13 +32,13 @@ function addButton(e) {
 	console.log("x= " + e.clientX);
 	console.log("y= " + e.clientY);
 
-	if(e.clientY>50) {
+	if(e.clientY<50) {
 		console.log("High enough for button add");
 	}
 	if(e.clientX>(window.screen.availWidth-(.08*window.screen.availWidth))) {
 		console.log("Right enough for button add");
 	}
-	if(e.clientY>50&&e.clientX>(window.screen.availWidth-(.08*window.screen.availWidth))) {
+	if(e.clientY<50&&e.clientX>(window.screen.availWidth-(.08*window.screen.availWidth))) {
 		console.log("Button ... should be added");
 		document.getElementById("fullButton").style.visibility = 'initial';
 	}
