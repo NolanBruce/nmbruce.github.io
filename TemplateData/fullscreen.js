@@ -19,5 +19,7 @@ function goFull() {
 	} catch(err) {
 		console.log("webkitRequestFullScreen failed");
 	}
+
+	console.log(document.getElementById("fullscreen").parentElement.nodeName)
 	
 }
