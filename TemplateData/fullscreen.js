@@ -23,7 +23,7 @@ function goFull() {
 	var x = document.getElementById("fullscreen")
 	var y;
 	for(i=0; i<10; i++) {
-		y = x.parentElement.nodeName;
+		y = x.parentNode.nodeName;
 		console.log(y);
 		x = document.getElementById(y);
 	}
