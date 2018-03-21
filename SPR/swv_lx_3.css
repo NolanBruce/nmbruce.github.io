@@ -51,10 +51,12 @@ header {
     /*To do: fix width/height, border, look of button in general to match Mute
     and Report buttons.*/
     background: url(https://nmbruce.github.io/SPR/Menu.png) no-repeat;
-    background-size: 100% 100%;
+    background-size: 50px 50px;
     right: 0;
-    width: 8%;
-    height: 120%;
+    width: 0px;
+    height: 0px;
+    overflow:visible;
+    pointer-events:none;
     color: #3686ff;
     border: none;
     outline: none;
