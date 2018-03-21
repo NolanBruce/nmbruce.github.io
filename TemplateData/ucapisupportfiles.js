@@ -14738,6 +14738,8 @@ define ('main',['require','jquery','ExtendedModel','api/snapshot/adapters/Backbo
 
     window.getUnityData = function (simId, key)
     {
+        console.log("simId: " + simId);
+        console.log("key: " + key);
         Transporter.getDataRequest(simId, key, transmitDataToUnity, storageError);
     };
 
