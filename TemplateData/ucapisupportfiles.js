@@ -14689,10 +14689,6 @@ define ('main',['require','jquery','ExtendedModel','api/snapshot/adapters/Backbo
 
     window.receiveExposeFromUnity = function (name, type, value, allowedValues)
     {
-        console.log("Name: " + name);
-        console.log("type: " + type);
-        console.log("value: " + value);
-        console.log("allowedValues" + allowedValues);
         if (!initialized)
         {
             Controller.notifyOnReady();
