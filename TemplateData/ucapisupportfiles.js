@@ -14689,6 +14689,10 @@ define ('main',['require','jquery','ExtendedModel','api/snapshot/adapters/Backbo
 
     window.receiveExposeFromUnity = function (name, type, value, allowedValues)
     {
+        console.log("Name: " + name);
+        console.log("type: " + type);
+        console.log("value: " + value);
+        console.log("allowedValues" + allowedValues);
         if (!initialized)
         {
             Controller.notifyOnReady();
@@ -14733,8 +14737,6 @@ define ('main',['require','jquery','ExtendedModel','api/snapshot/adapters/Backbo
     // JOS: 12/9/2016
     window.storeUnityData = function (simId, key, value)
     {
-        console.log("simId: " + simId);
-        console.log("key: " + key);
         Transporter.setDataRequest(simId, key, value, storageSuccess, storageError);
     };
 
