@@ -18,13 +18,13 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 
 .fullscreen {
 	position: absolute;
-	right: 5%;
-	top: 10%;
+	right: 20%;
+	top: 0%;
 	z-index: 22000;
 }
 
 .fullscreen button {
-	font-family: open_sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background-color: #1c1c1c;
-    color: #fff;
+	background: url(https://nmbruce.github.io/TemplateData/full-screen-hi-png) no-repeat;
+    background-size: 50px 50px;
+    border: blue;
 }
