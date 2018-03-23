@@ -1,26 +1,40 @@
+var isFull = false;
+
 function fullscreen() {
 		goFull();
 }
 
-function goFull() {
+function toggleFull() {
 	var frame = document.getElementById("gameContainer");
-	try {
-		frame.requestFullscreen();
-	} catch(err) {
-		console.log("requestFullScreen failed");
+	if (!isFull) {
+		if(frame.requestFullScreen) {
+			frame.requestFullScreen();
+			ifFull = true;
+		} else if (frame.mozRequestFullscreen) {
+			frame.mozRequestFullscreen();
+			isFull = true;
+		} else if (frame.webkitRequestFullscreen) {
+			frame.webkitRequestFullscreen();
+			isFull = true;
+		} else if (frame.msRequestFullscreen) {
+			frame.msRequestFullscreen();
+			isFull = true;
+		}
+	} else {
+		if(frame.exitFullScreen) {
+			frame.exitFullScreen();
+			ifFull = false;
+		} else if (frame.mozCancelFullscreen) {
+			frame.mozCancelFullscreen();
+			isFull = false;
+		} else if (frame.webkitExitFullscreen) {
+			frame.webkitExitFullscreen();
+			isFull = false;
+		} else if (frame.msExitFullscreen) {
+			frame.msExitFullscreen();
+			isFull = false;
+		}
 	}
-	try {
-		frame.mozRequestFullscreen();
-	} catch(err) {
-		console.log("mozRequestFullScreen failed");
-	}
-	try {
-		frame.webkitRequestFullscreen();
-	} catch(err) {
-		console.log("webkitRequestFullScreen failed");
-	}
-
-	document.getElementById("fullButton").style.visibility = 'hidden';
 }
 
 function addFullListener() {
