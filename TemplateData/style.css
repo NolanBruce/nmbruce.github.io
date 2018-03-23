@@ -23,7 +23,7 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 	z-index: 22000;
 }
 
-.fullscreen button {
+.fullButton {
 	background-image: url(https://nmbruce.github.io/TemplateData/full-screen-hi-png);
 	background-repeat: no-repeat;
     background-size: 50px 50px;
