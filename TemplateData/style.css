@@ -28,4 +28,6 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 	background-repeat: no-repeat;
     background-size: 50px 50px;
     border: blue;
+    height: 50px;
+    width:50px;
 }
