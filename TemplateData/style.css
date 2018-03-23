@@ -24,7 +24,7 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 }
 
 .fullButton {
-	background:url(./TemplateData/full-screen-hi-png);
+	background:url(./TemplateData/full-screen-hi.png);
 	background-repeat: no-repeat;
     background-size: 50px 50px;
     border: blue;
