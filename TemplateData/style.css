@@ -16,19 +16,18 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 .webgl-content .progress.Dark .empty {background-image: url('progressEmpty.Dark.png');}
 .webgl-content .progress.Dark .full {background-image: url('progressFull.Dark.png');}
 
-.webgl-content .fullscreen {
+.fullscreen {
 	position: absolute;
 	right: 10%;
 	top: 0%;
 	z-index: 22000;
 }
 
-.webgl-content .fullButton {
+.fullButton {
 	background: url(full-screen-hi.png);
 	background-repeat: no-repeat;
     background-size: 50px 50px;
     border: blue;
     height: 50px;
     width:50px;
-    z-index: 22001;
 }
