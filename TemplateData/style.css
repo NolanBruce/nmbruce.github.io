@@ -33,3 +33,6 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
     width:50px;
     z-index: 2147483647;
 }
+.fullButton:active {
+	background: url(exit-full-screen-hi.png);
+}
