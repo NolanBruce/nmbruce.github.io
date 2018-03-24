@@ -3,21 +3,26 @@ var isFull = false;
 function toggleFull() {
 	var frame = document.getElementById("gameContainer");
 	console.log(document.fullscreenElement)
+	console.log(frame.fullscreen);
 	//var button = document.getElementById("fullButton")
-	if (isFull != null) {
+	if (!isFull) {
 		console.log ("Attempting to enter fullscreen");
 		if(frame.requestFullScreen) {
 			frame.requestFullScreen();
-			isFull = document.fullscreenElement;
+			isFull = true;
+			console.log(frame.fullscreen);
 		} else if (frame.mozRequestFullscreen) {
 			frame.mozRequestFullscreen();
-			isFull = document.fullscreenElement;
+			isFull = true;
+			console.log(frame.fullscreen);
 		} else if (frame.webkitRequestFullscreen) {
 			frame.webkitRequestFullscreen();
-			isFull = document.fullscreenElement;
+			isFull = true;
+			console.log(frame.fullscreen);
 		} else if (frame.msRequestFullscreen) {
 			frame.msRequestFullscreen();
-			isFull = document.fullscreenElement;
+			isFull = true;
+			console.log(frame.fullscreen);
 		}
 		//console.log("Changing button image to exit");
 		//button.style.backgroundImage = "url('TemplateData/exit-full-screen-hi.png')";
