@@ -18,7 +18,7 @@ function toggleFull() {
 		} else if (frame.webkitRequestFullscreen) {
 			frame.webkitRequestFullscreen();
 			isFull = true;
-			console.log(frame.fullscreen);
+			console.log(document.webkitIsFullScreen);
 		} else if (frame.msRequestFullscreen) {
 			frame.msRequestFullscreen();
 			isFull = true;
