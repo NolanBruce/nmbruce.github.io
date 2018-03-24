@@ -1,20 +1,20 @@
 function toggleFull() {
 	var frame = document.getElementById("gameContainer");
 	var button = document.getElementById("fullButton")
-	if (sessionStorage.getItem('isFull') == false) {
+	if (!sessionStorage.getItem('isFull')) {
 		console.log ("Attempting to enter fullscreen");
 		if(frame.requestFullScreen) {
 			frame.requestFullScreen();
 			sessionStorage.setItem('isFull', true);
 		} else if (frame.mozRequestFullscreen) {
 			frame.mozRequestFullscreen();
-			sessionStorage[isFull] = true;
+			sessionStorage.setItem('isFull', true);
 		} else if (frame.webkitRequestFullscreen) {
 			frame.webkitRequestFullscreen();
-			sessionStorage[isFull] = true;
+			sessionStorage.setItem('isFull', true);
 		} else if (frame.msRequestFullscreen) {
 			frame.msRequestFullscreen();
-			sessionStorage[isFull] = true;
+			sessionStorage.setItem('isFull', true);
 		}
 		console.log("Changing button image to exit");
 		button.style.backgroundImage = "url('exit-full-screen-hi.png')";
