@@ -2,6 +2,7 @@ var isFull = false;
 
 function toggleFull() {
 	var frame = document.getElementById("gameContainer");
+	console.log(document.fullscreenElement)
 	//var button = document.getElementById("fullButton")
 	if (!isFull) {
 		console.log ("Attempting to enter fullscreen");
