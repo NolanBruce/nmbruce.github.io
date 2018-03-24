@@ -1,9 +1,3 @@
-sessionStorage[isFull] = false;
-
-function fullscreen() {
-		goFull();
-}
-
 function toggleFull() {
 	var frame = document.getElementById("gameContainer");
 	var button = document.getElementById("fullButton")
@@ -44,6 +38,10 @@ function toggleFull() {
 		button.style.backgroundImage = "url('full-screen-hi.png')";
     	button.style.backgroundRepeat = "no-repeat";
 	}
+}
+
+function setUpFull() {
+	sessionStorage[isFull] = false;
 }
 
 function addFullListener() {
