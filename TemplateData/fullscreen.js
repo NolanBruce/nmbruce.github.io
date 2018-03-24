@@ -3,20 +3,20 @@ var isFull = false;
 function toggleFull() {
 	var frame = document.getElementById("gameContainer");
 	//var button = document.getElementById("fullButton")
-	if (true) {
+	if (!isFull) {
 		console.log ("Attempting to enter fullscreen");
 		if(frame.requestFullScreen) {
-			document.requestFullScreen();
-			//isFull = true;
+			frame.requestFullScreen();
+			isFull = true;
 		} else if (frame.mozRequestFullscreen) {
-			document.mozRequestFullscreen();
-			//isFull = true;
+			frame.mozRequestFullscreen();
+			isFull = true;
 		} else if (frame.webkitRequestFullscreen) {
-			document.webkitRequestFullscreen();
-			//isFull = true;
+			frame.webkitRequestFullscreen();
+			isFull = true;
 		} else if (frame.msRequestFullscreen) {
-			document.msRequestFullscreen();
-			//isFull = true;
+			frame.msRequestFullscreen();
+			isFull = true;
 		}
 		//console.log("Changing button image to exit");
 		//button.style.backgroundImage = "url('TemplateData/exit-full-screen-hi.png')";
@@ -25,16 +25,16 @@ function toggleFull() {
 		console.log("Attempting to exit fullscren");
 		if(frame.exitFullScreen) {
 			document.exitFullScreen();
-			//isFull = false;
+			isFull = false;
 		} else if (frame.mozCancelFullscreen) {
 			document.mozCancelFullscreen();
-			//isFull = false;
+			isFull = false;
 		} else if (frame.webkitExitFullscreen) {
 			document.webkitExitFullscreen();
-			//isFull = false;
+			isFull = false;
 		} else if (frame.msExitFullscreen) {
 			document.msExitFullscreen();
-			//isFull = false;
+			isFull = false;
 		}
 		//console.log("Changing button image to enter");
 		//button.style.backgroundImage = "url('full-screen-hi.png')";
