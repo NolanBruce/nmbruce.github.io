@@ -26,7 +26,6 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 }
 
 .webgl-content .fullButton {
-	position: absolute;
 	background: url();
 	background-repeat: no-repeat;
     background-size: 50px 50px;
