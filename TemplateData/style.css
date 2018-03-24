@@ -17,9 +17,11 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 .webgl-content .progress.Dark .full {background-image: url('progressFull.Dark.png');}
 
 .webgl-content .fullscreen {
-	position: relative;
+	position: absolute;
 	right: 10%;
 	top: 0%;
+	height: 50px;
+    width:50px;
 	border: blue;
 	z-index: 2147483647;
 }
