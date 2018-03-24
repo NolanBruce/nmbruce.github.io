@@ -6,17 +6,17 @@ function toggleFull() {
 	if (document.fullscreenElement) {
 		console.log ("Attempting to enter fullscreen");
 		if(frame.requestFullScreen) {
-			frame.requestFullScreen();
-			isFull = true;
+			document.requestFullScreen();
+			//isFull = true;
 		} else if (frame.mozRequestFullscreen) {
-			frame.mozRequestFullscreen();
-			isFull = true;
+			document.mozRequestFullscreen();
+			//isFull = true;
 		} else if (frame.webkitRequestFullscreen) {
-			frame.webkitRequestFullscreen();
-			isFull = true;
+			document.webkitRequestFullscreen();
+			//isFull = true;
 		} else if (frame.msRequestFullscreen) {
-			frame.msRequestFullscreen();
-			isFull = true;
+			document.msRequestFullscreen();
+			//isFull = true;
 		}
 		//console.log("Changing button image to exit");
 		//button.style.backgroundImage = "url('TemplateData/exit-full-screen-hi.png')";
@@ -24,17 +24,17 @@ function toggleFull() {
 	} else {
 		console.log("Attempting to exit fullscren");
 		if(frame.exitFullScreen) {
-			frame.exitFullScreen();
-			isFull = false;
+			document.exitFullScreen();
+			//isFull = false;
 		} else if (frame.mozCancelFullscreen) {
-			frame.mozCancelFullscreen();
-			isFull = false;
+			document.mozCancelFullscreen();
+			//isFull = false;
 		} else if (frame.webkitExitFullscreen) {
-			frame.webkitExitFullscreen();
-			isFull = false;
+			document.webkitExitFullscreen();
+			//isFull = false;
 		} else if (frame.msExitFullscreen) {
-			frame.msExitFullscreen();
-			isFull = false;
+			document.msExitFullscreen();
+			//isFull = false;
 		}
 		//console.log("Changing button image to enter");
 		//button.style.backgroundImage = "url('full-screen-hi.png')";
