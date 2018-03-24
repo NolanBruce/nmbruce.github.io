@@ -36,13 +36,17 @@ function toggleFull() {
 			document.msExitFullscreen();
 			isFull = false;
 		}
-		//console.log("Changing button image to enter");
-		//button.style.backgroundImage = "url('full-screen-hi.png')";
-    	//button.style.backgroundRepeat = "no-repeat";
+		console.log("Changing button image to enter");
+		button.style.backgroundImage = "url('TemplateData/full-screen-hi.png')";
+    	button.style.backgroundRepeat = "no-repeat";
 	}
 }
 
 function setUpFull() {
+	button.style.backgroundImage = "url('TemplateData/full-screen-hi.png')";
+	button.style.backgroundRepeat = "no-repeat";
+	button.style.height = "50px";
+	button.style.width = "50px"
 	isFull = false;
 }
 
