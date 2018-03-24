@@ -46,8 +46,8 @@ function setUpFull() {
 	var button = document.getElementById("fullButton");
 	button.style.backgroundImage = "url('TemplateData/full-screen-hi.png')";
 	button.style.backgroundRepeat = "no-repeat";
-	button.style.height = "50px";
-	button.style.width = "50px";
+	button.style.backgroundHeight = "50px";
+	button.style.backgroundWidth = "50px";
 	button.style.size = "50px, 50px";
 	isFull = false;
 }
