@@ -8,16 +8,16 @@ function toggleFull() {
 		console.log ("Attempting to enter fullscreen");
 		if(frame.requestFullScreen) {
 			frame.requestFullScreen();
-			isFull = true;
+			isFull = document.fullscreenElement;
 		} else if (frame.mozRequestFullscreen) {
 			frame.mozRequestFullscreen();
-			isFull = true;
+			isFull = document.fullscreenElement;
 		} else if (frame.webkitRequestFullscreen) {
 			frame.webkitRequestFullscreen();
-			isFull = true;
+			isFull = document.fullscreenElement;
 		} else if (frame.msRequestFullscreen) {
 			frame.msRequestFullscreen();
-			isFull = true;
+			isFull = document.fullscreenElement;
 		}
 		//console.log("Changing button image to exit");
 		//button.style.backgroundImage = "url('TemplateData/exit-full-screen-hi.png')";
@@ -44,7 +44,7 @@ function toggleFull() {
 }
 
 function setUpFull() {
-	isFull = document.fullscreenElement;
+	isFull = false;
 }
 
 function addFullListener() {
