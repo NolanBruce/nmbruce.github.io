@@ -21,13 +21,13 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 	right: 10%;
 	top: 0%;
 	z-index: 22000;
+	border: blue;
 }
 
 .fullButton {
 	background: url(full-screen-hi.png);
 	background-repeat: no-repeat;
     background-size: 50px 50px;
-    border: blue;
     height: 50px;
     width:50px;
 }
