@@ -19,7 +19,7 @@ function toggleFull() {
 			isFull = true;
 		}
 		console.log("Changing button image to exit");
-		button.style.backgroundImage = "url('exit-full-screen-hi.png')";
+		button.style.backgroundImage = "url('TemplateData/exit-full-screen-hi.png')";
     	button.style.backgroundRepeat = "no-repeat";
 	} else {
 		console.log("Attempting to exit fullscren");
