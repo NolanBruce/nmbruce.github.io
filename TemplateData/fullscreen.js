@@ -3,9 +3,10 @@ var isFull = false;
 function toggleFull() {
 	var frame = document.getElementById("gameContainer");
 	console.log(document.fullscreenElement)
-	console.log(frame.fullscreen);
+	console.log("window height: " + window.innerHeight);
+	console.log("screen height: " + screen.height);
 	//var button = document.getElementById("fullButton")
-	if (!isFull) {
+	if (window.innerHeight == screen.height) {
 		console.log ("Attempting to enter fullscreen");
 		if(frame.requestFullScreen) {
 			frame.requestFullScreen();
