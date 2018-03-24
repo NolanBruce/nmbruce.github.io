@@ -6,28 +6,24 @@ function toggleFull() {
 	console.log("window height: " + window.innerHeight);
 	console.log("screen height: " + screen.height);
 	//var button = document.getElementById("fullButton")
-	if (window.innerHeight == screen.height) {
+	if (window.innerHeight != screen.height) {
 		console.log ("Attempting to enter fullscreen");
 		if(frame.requestFullScreen) {
 			frame.requestFullScreen();
 			isFull = true;
-			console.log(frame.fullscreen);
 		} else if (frame.mozRequestFullscreen) {
 			frame.mozRequestFullscreen();
 			isFull = true;
-			console.log(frame.fullscreen);
 		} else if (frame.webkitRequestFullscreen) {
 			frame.webkitRequestFullscreen();
 			isFull = true;
-			console.log(document.webkitIsFullScreen);
 		} else if (frame.msRequestFullscreen) {
 			frame.msRequestFullscreen();
 			isFull = true;
-			console.log(frame.fullscreen);
 		}
-		//console.log("Changing button image to exit");
-		//button.style.backgroundImage = "url('TemplateData/exit-full-screen-hi.png')";
-    	//button.style.backgroundRepeat = "no-repeat";
+		console.log("Changing button image to exit");
+		button.style.background = "url('TemplateData/exit-full-screen-hi.png')";
+    	button.style.backgroundRepeat = "no-repeat";
 	} else {
 		console.log("Attempting to exit fullscren");
 		if(frame.exitFullScreen) {
