@@ -48,6 +48,8 @@ function toggleFull() {
 	button.class = "exitFullButton";
 	document.getElementById("fullButton").style.visibility = 'hidden';                              
 	document.getElementById("gameContainer").appendChild(button); 
+	button = document.getElementById("exitFullButton");
+	button.class = "exitFullButton";
 }
 
 function setUpFull() {
