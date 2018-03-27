@@ -21,33 +21,32 @@ function toggleFull() {
 			frame.msRequestFullscreen();
 			isFull = true;
 			addExit();
-		} else {
-			if(frame.exitFullScreen) {
+		} 
+	} else {
+		if(frame.exitFullScreen) {
 			document.exitFullScreen();
 			isFull = false;
 			addFull();
-			} else if (frame.mozCancelFullscreen) {
-				document.mozCancelFullscreen();
-				isFull = false;
-				addFull();
-			} else if (frame.webkitExitFullscreen) {
-				document.webkitExitFullscreen();
-				isFull = false;
-				addFull();
-			} else if (frame.msExitFullscreen) {
-				document.msExitFullscreen();
-				isFull = false;
-				addFull();
-			}
-		console.log("Changing button image to enter");
-		button.style.backgroundImage = "url('TemplateData/full-screen-hi.png')";
-    	button.style.backgroundRepeat = "no-repeat";
+		} else if (frame.mozCancelFullscreen) {
+			document.mozCancelFullscreen();
+			isFull = false;
+			addFull();
+		} else if (frame.webkitExitFullscreen) {
+			document.webkitExitFullscreen();
+			isFull = false;
+			addFull();
+		} else if (frame.msExitFullscreen) {
+			document.msExitFullscreen();
+			isFull = false;
+			addFull();
 		}
+	document.getElementById("fullButton").style.visibility = 'visibile';
 	}
 }
 
 function exitFull() {
 	var frame = document.getElementById("gameContainer");
+	var button = document.getElementById("fullButton");
 	console.log("Attempting to exit fullscren");
 		if(frame.exitFullScreen) {
 			document.exitFullScreen();
@@ -66,9 +65,7 @@ function exitFull() {
 			isFull = false;
 			addFull();
 		}
-		console.log("Changing button image to enter");
-		button.style.backgroundImage = "url('TemplateData/full-screen-hi.png')";
-    	button.style.backgroundRepeat = "no-repeat";
+		document.getElementById("fullButton").style.visibility = 'visibile';
 }
 
 function addExit() {
