@@ -47,7 +47,7 @@ function addExit() {
 	var button = document.createElement("BUTTON");   
 	button.id = "exitFullButton"     
 	button.class = "exitFullButton";
-	button.onclick = toggleFull();
+	button.addEventListener("click", toggleFull);
 	document.getElementById("fullButton").style.visibility = 'hidden';                              
 	document.getElementById("gameContainer").appendChild(button); 
 	button = document.getElementById("exitFullButton");
