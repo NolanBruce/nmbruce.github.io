@@ -17,7 +17,6 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 .webgl-content .progress.Dark .full {background-image: url('progressFull.Dark.png');}
 
 .webgl-content .exitFullButton {
-	position: absolute;
 	top: 5px;
 	right: 150px;
 	background: url('TemplateData/exit-full-screen-hi.png');
