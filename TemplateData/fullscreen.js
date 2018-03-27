@@ -1,6 +1,6 @@
 var isFull = false;
 
-function toggleFull() {
+function toggleFull2() {
 	var frame = document.getElementById("gameContainer");
 	var button = document.getElementById("fullButton");
 	if (window.innerHeight != screen.height) {
@@ -40,6 +40,16 @@ function toggleFull() {
 		button.style.backgroundImage = "url('TemplateData/full-screen-hi.png')";
     	button.style.backgroundRepeat = "no-repeat";
 	}
+}
+
+function toggleFull() {
+	var button = document.createElement("BUTTON");   
+	button.id = "exitFullButton"     
+	button.class = "fullButton";
+	button.style.background = "url('TemplateData/exit-full-screen-hi.png')";
+	document.getElementById("fullButton").style.visibility = 'hidden';
+	button.appendChild(t);                                
+	document.getElementById("gameContainer").appendChild(button); 
 }
 
 function setUpFull() {
