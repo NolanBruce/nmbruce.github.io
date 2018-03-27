@@ -45,7 +45,8 @@ function toggleFull2() {
 function toggleFull() {
 	var button = document.createElement("BUTTON");   
 	button.id = "exitFullButton"     
-	button.class = "exitFullButton";
+	button.setAttribute("style", "top: 5px, right: 150px, background: url(), height: 50px, width: 50px, z-index: 2147483646"); 
+	//button.class = "exitFullButton";
 	button.style.background = "url('TemplateData/exit-full-screen-hi.png')";
 	document.getElementById("fullButton").style.visibility = 'hidden';                              
 	document.getElementById("gameContainer").appendChild(button); 
