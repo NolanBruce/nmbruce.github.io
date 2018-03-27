@@ -1,6 +1,6 @@
 var isFull = false;
 
-function toggleFull2() {
+function toggleFull() {
 	var frame = document.getElementById("gameContainer");
 	var button = document.getElementById("fullButton");
 	if (window.innerHeight != screen.height) {
@@ -8,19 +8,20 @@ function toggleFull2() {
 		if(frame.requestFullScreen) {
 			frame.requestFullScreen();
 			isFull = true;
+			addExit();
 		} else if (frame.mozRequestFullscreen) {
 			frame.mozRequestFullscreen();
 			isFull = true;
+			addExit();
 		} else if (frame.webkitRequestFullscreen) {
 			frame.webkitRequestFullscreen();
 			isFull = true;
+			addExit();
 		} else if (frame.msRequestFullscreen) {
 			frame.msRequestFullscreen();
 			isFull = true;
+			addExit();
 		}
-		console.log("Changing button image to exit");
-		button.style.background = "url('TemplateData/exit-full-screen-hi.png')";
-    	button.style.backgroundRepeat = "no-repeat";
 	} else {
 		console.log("Attempting to exit fullscren");
 		if(frame.exitFullScreen) {
@@ -42,10 +43,11 @@ function toggleFull2() {
 	}
 }
 
-function toggleFull() {
+function addExit() {
 	var button = document.createElement("BUTTON");   
 	button.id = "exitFullButton"     
 	button.class = "exitFullButton";
+	button.onclick = toggleFull();
 	document.getElementById("fullButton").style.visibility = 'hidden';                              
 	document.getElementById("gameContainer").appendChild(button); 
 	button = document.getElementById("exitFullButton");

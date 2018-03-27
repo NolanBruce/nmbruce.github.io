@@ -19,7 +19,7 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 .webgl-content .exitFullButton {
 	position: relative;
 	top: -100%;
-	right: -90%;
+	right: -85%;
 	background-image: url(https://nmbruce.github.io/TemplateData/exit-full-screen-hi.png);
 	background-repeat: no-repeat;
     background-size: 50px 50px;
