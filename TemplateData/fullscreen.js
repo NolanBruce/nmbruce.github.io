@@ -27,25 +27,25 @@ function toggleFull() {
 		} 
 	} else {
 		console.log("Attempting to exit fullscreen");
-		if(frame.exitFullScreen) {
+		if(document.exitFullScreen) {
 			console.log("standardExit");
 			document.exitFullScreen();
 			isFull = false;
-		} else if (frame.mozCancelFullscreen) {
+		} else if (document.mozCancelFullscreen) {
 			console.log("moxExit");
 			document.mozCancelFullscreen();
 			isFull = false;
-		} else if (frame.webkitExitFullscreen) {
+		} else if (document.webkitExitFullscreen) {
 			console.log("webkitExit");
 			document.webkitExitFullscreen();
 			isFull = false;
-		} else if (frame.msExitFullscreen) {
+		} else if (document.msExitFullscreen) {
 			console.log("msExit");
 			document.msExitFullscreen();
 			isFull = false;
 		}
 	document.getElementById("exitFullButton").style.visibility = 'hidden';
-	document.getElementById("fullButton").style.visibility = 'visibile';
+	document.getElementById("fullButton").style.visibility = 'initial';
 	}
 }
 
