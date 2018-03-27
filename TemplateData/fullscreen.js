@@ -22,43 +22,48 @@ function toggleFull() {
 			isFull = true;
 			addExit();
 		}
-	} else {
-		console.log("Attempting to exit fullscren");
+	}
+}
+
+function exitFull() {
+	console.log("Attempting to exit fullscren");
 		if(frame.exitFullScreen) {
 			document.exitFullScreen();
 			isFull = false;
+			addFull();
 		} else if (frame.mozCancelFullscreen) {
 			document.mozCancelFullscreen();
 			isFull = false;
+			addFull();
 		} else if (frame.webkitExitFullscreen) {
 			document.webkitExitFullscreen();
 			isFull = false;
+			addFull();
 		} else if (frame.msExitFullscreen) {
 			document.msExitFullscreen();
 			isFull = false;
+			addFull();
 		}
 		console.log("Changing button image to enter");
 		button.style.backgroundImage = "url('TemplateData/full-screen-hi.png')";
     	button.style.backgroundRepeat = "no-repeat";
-	}
 }
 
 function addExit() {
 	var button = document.createElement("BUTTON");   
 	button.id = "exitFullButton"     
 	button.class = "exitFullButton";
-	button.addEventListener("click", toggleFull);
 	document.getElementById("fullButton").style.visibility = 'hidden';                              
 	document.getElementById("gameContainer").appendChild(button); 
 	button = document.getElementById("exitFullButton");
 	button.className = "exitFullButton";
+	button.addEventListener("click", exitFull);
 }
 
-function setUpFull() {
+function addFull() {
 	var button = document.getElementById("fullButton");
 	button.style.backgroundImage = "url('TemplateData/full-screen-hi.png')";
 	button.style.backgroundRepeat = "no-repeat";
-	isFull = false;
 }
 
 function addFullListener() {
