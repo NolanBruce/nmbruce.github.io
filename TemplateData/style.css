@@ -16,7 +16,7 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 .webgl-content .progress.Dark .empty {background-image: url('progressEmpty.Dark.png');}
 .webgl-content .progress.Dark .full {background-image: url('progressFull.Dark.png');}
 
-.webgl-content .fullButton {
+.fullButton {
 	top: 0%;
 	right: 10%;
 	background: url();
