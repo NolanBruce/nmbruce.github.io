@@ -5,18 +5,22 @@ function toggleFull() {
 	if (!document.isFullScreen && !document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
 		console.log ("Attempting to enter fullscreen");
 		if(frame.requestFullScreen) {
+			console.log("standardFull");
 			frame.requestFullScreen();
 			isFull = true;
 			addExit();
 		} else if (frame.mozRequestFullscreen) {
+			console.log("mozFull");
 			frame.mozRequestFullscreen();
 			isFull = true;
 			addExit();
 		} else if (frame.webkitRequestFullscreen) {
+			console.log("webkitFull");
 			frame.webkitRequestFullscreen();
 			isFull = true;
 			addExit();
 		} else if (frame.msRequestFullscreen) {
+			console.log("msFull");
 			frame.msRequestFullscreen();
 			isFull = true;
 			addExit();
@@ -24,15 +28,19 @@ function toggleFull() {
 	} else {
 		console.log("Attempting to exit fullscreen");
 		if(frame.exitFullScreen) {
+			console.log("standardExit");
 			document.exitFullScreen();
 			isFull = false;
 		} else if (frame.mozCancelFullscreen) {
+			console.log("moxExit");
 			document.mozCancelFullscreen();
 			isFull = false;
 		} else if (frame.webkitExitFullscreen) {
+			console.log("webkitExit");
 			document.webkitExitFullscreen();
 			isFull = false;
 		} else if (frame.msExitFullscreen) {
+			console.log("msExit");
 			document.msExitFullscreen();
 			isFull = false;
 		}
