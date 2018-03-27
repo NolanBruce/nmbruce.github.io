@@ -19,7 +19,7 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 .webgl-content .exitFullButton {
 	top: 0%;
 	right: 10%	;
-	background: url("/TemplateData/exit-full-screen-hi.png");
+	background-image: url("TemplateData/exit-full-screen-hi.png");
 	background-repeat: no-repeat;
     background-size: 50px 50px;
     height: 50px;
