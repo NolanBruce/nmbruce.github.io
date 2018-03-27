@@ -60,8 +60,8 @@ function addExit() {
 		button.addEventListener("click", toggleFull);
 	} else{
 		document.getElementById("exitFullButton").style.visibility = 'initial';
-		document.getElementById("fullButton").style.visibility = 'hidden';
 	}
+	document.getElementById("fullButton").style.visibility = 'hidden';
 }
 
 function addFull() {
@@ -75,17 +75,4 @@ function addFullListener() {
 	document.getElementById("gameContainer").addEventListener("click", addButton);
 	var x = document.getElementById("gameContainer");
 	var y;
-}
-
-function hideFullButton() {
-	document.getElementById("fullButton").style.visibility = 'hidden';
-}
-
-function addButton(e) {
-	document.getElementById("fullButton").style.visibility = 'initial';
-}
-
-function defAddButton() {
-	console.log("Button ... should be added");
-	document.getElementById("fullButton").style.visibility = 'initial';
 }
