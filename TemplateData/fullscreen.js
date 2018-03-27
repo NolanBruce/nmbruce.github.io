@@ -21,6 +21,27 @@ function toggleFull() {
 			frame.msRequestFullscreen();
 			isFull = true;
 			addExit();
+		} else {
+			if(frame.exitFullScreen) {
+			document.exitFullScreen();
+			isFull = false;
+			addFull();
+			} else if (frame.mozCancelFullscreen) {
+				document.mozCancelFullscreen();
+				isFull = false;
+				addFull();
+			} else if (frame.webkitExitFullscreen) {
+				document.webkitExitFullscreen();
+				isFull = false;
+				addFull();
+			} else if (frame.msExitFullscreen) {
+				document.msExitFullscreen();
+				isFull = false;
+				addFull();
+			}
+		console.log("Changing button image to enter");
+		button.style.backgroundImage = "url('TemplateData/full-screen-hi.png')";
+    	button.style.backgroundRepeat = "no-repeat";
 		}
 	}
 }
@@ -58,7 +79,7 @@ function addExit() {
 	document.getElementById("gameContainer").appendChild(button); 
 	button = document.getElementById("exitFullButton");
 	button.className = "exitFullButton";
-	button.addEventListener("click", exitFull);
+	button.addEventListener("click", toggleFull);
 }
 
 function addFull() {
