@@ -26,6 +26,7 @@ function toggleFull() {
 }
 
 function exitFull() {
+	var frame = document.getElementById("gameContainer");
 	console.log("Attempting to exit fullscren");
 		if(frame.exitFullScreen) {
 			document.exitFullScreen();
