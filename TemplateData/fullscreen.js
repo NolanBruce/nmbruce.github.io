@@ -2,7 +2,6 @@ var isFull = false;
 
 function toggleFull() {
 	var frame = document.getElementById("gameContainer");
-	var button = document.getElementById("fullButton");
 	if (!document.isFullScreen && !document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
 		console.log ("Attempting to enter fullscreen");
 		if(frame.requestFullScreen) {
@@ -23,23 +22,21 @@ function toggleFull() {
 			addExit();
 		} 
 	} else {
+		console.log("Attempting to exit fullscreen");
 		if(frame.exitFullScreen) {
 			document.exitFullScreen();
 			isFull = false;
-			addFull();
 		} else if (frame.mozCancelFullscreen) {
 			document.mozCancelFullscreen();
 			isFull = false;
-			addFull();
 		} else if (frame.webkitExitFullscreen) {
 			document.webkitExitFullscreen();
 			isFull = false;
-			addFull();
 		} else if (frame.msExitFullscreen) {
 			document.msExitFullscreen();
 			isFull = false;
-			addFull();
 		}
+	document.getElementById("exitFullButton").style.visibility = 'hidden';
 	document.getElementById("fullButton").style.visibility = 'visibile';
 	}
 }
