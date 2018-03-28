@@ -25,7 +25,7 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
     background-size: 50px 50px;
     height: 50px;
     width: 50px;
-    z-index: 2147483647;
+    z-index: 20000;
 }
 
 .fullscreen {
@@ -40,10 +40,10 @@ body { background-color: #000000; margin: 0px 0px 0px 0px;}
 .fullscreen .fullButton {
 	top: 0%;
 	right: 10%;
-	background: url();
+	background: url(https://nmbruce.github.io/TemplateData/full-screen-hi.png);
 	background-repeat: no-repeat;
     background-size: 50px 50px;
     height: 50px;
     width: 50px;
-    z-index: 2147483647;
+    z-index: 200001;
 }
