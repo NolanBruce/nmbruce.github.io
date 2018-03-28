@@ -27,19 +27,15 @@ function toggleFull() {
 		if(document.exitFullScreen) {
 			console.log("standardExit");
 			document.exitFullScreen();
-			isFull = false;
 		} else if (document.mozCancelFullscreen) {
 			console.log("moxExit");
 			document.mozCancelFullscreen();
-			isFull = false;
 		} else if (document.webkitExitFullscreen) {
 			console.log("webkitExit");
 			document.webkitExitFullscreen();
-			isFull = false;
 		} else if (document.msExitFullscreen) {
 			console.log("msExit");
 			document.msExitFullscreen();
-			isFull = false;
 		}
 	document.getElementById("exitFullButton").style.visibility = 'hidden';
 	document.getElementById("fullButton").style.visibility = 'initial';
@@ -60,4 +56,22 @@ function addExit() {
 		document.getElementById("exitFullButton").style.visibility = 'initial';
 	}
 	document.getElementById("fullButton").style.visibility = 'hidden';
+}
+
+//removes fullscreen button if 
+function checkSupport(){
+	if(!detectFullFunc()) {
+		console.log("Fullscreen not supported, removing button.");
+		var element = document.getElementById("fullButton");
+    	element.parentNode.removeChild("fullButton");
+	}
+
+}
+
+//detects if any of the fullscreen functions are supported on the browser.
+function detectFullFunc() {
+	if(frame.requestFullScreen || frane.mozRequestFullscreen || frame.webkitRequestFullscreen || frame.msRequestFullscreen){
+		return true;
+	}
+	return false;
 }
