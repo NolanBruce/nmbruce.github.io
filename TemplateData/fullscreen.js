@@ -62,8 +62,7 @@ function addExit() {
 function checkSupport(){
 	if(!detectFullFunc()) {
 		console.log("Fullscreen not supported, removing button.");
-		var element = document.getElementById("fullButton");
-    	element.parentNode.removeChild("fullButton");
+		document.getElementById("fullButton").remove();
 	}
 
 }
