@@ -70,6 +70,7 @@ function checkSupport(){
 
 //detects if any of the fullscreen functions are supported on the browser.
 function detectFullFunc() {
+	var frame = document.getElementById("gameContainer");
 	if(frame.requestFullScreen || frane.mozRequestFullscreen || frame.webkitRequestFullscreen || frame.msRequestFullscreen){
 		return true;
 	}
