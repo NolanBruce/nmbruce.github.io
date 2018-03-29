@@ -13,7 +13,6 @@ header {
 }
 .headerContainer {
     height: 0px;
-    width: 100%;
     z-index: 200;
 }
 .headerContainer .defaultView {
@@ -53,8 +52,8 @@ header {
     background: url(https://nmbruce.github.io/TemplateData/Menu.png) no-repeat;
     background-size: 100% 100%;
     */
-    font-family: open_sans, "Helvetica Neue", Helvetica, Arial, sans-serif
-    right: 0%;
+    font-family: open_sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: right;
     width: 8%;
     height: 120%;
     color: #3686ff;
