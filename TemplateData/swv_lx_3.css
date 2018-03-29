@@ -56,7 +56,7 @@ header {
     float: right;
     width: 8%;
     height: 100%;
-    color: #3686ff;
+    color: black;
     background-color: black;
     border: 2px solid #1753b5;;
     outline: none;
@@ -73,7 +73,8 @@ header {
  	display: block;
  	color: black;
   	line-height: initial;
-  	top: 0;
+  	position: relative;
+  	top: -25px;
 }
 .icon-reorder {
     visibility: hidden;
