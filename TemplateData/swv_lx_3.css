@@ -71,6 +71,7 @@ header {
     content: 'Menu';
     text-indent: 0;
  	display: block;
+ 	color: black;
   	line-height: initial;
   	top: 0;
 }
