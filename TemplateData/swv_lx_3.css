@@ -69,17 +69,10 @@ header {
     background: url(https://nmbruce.github.io/TemplateData/Menu.png) no-repeat;
     background-size: 100% 100%;
     */
-    font-family: open_sans, "Helvetica Neue", Helvetica, Arial, sans-serif
-    right: -1000%;
-    width: 8%;
-    height: 120%;
-    color: #3686ff;
-    background-color: black;
-    border: 2px solid #1753b5;;
-    outline: none;
-    position: absolute;
-    z-index: 1000;
     content: 'Menu';
+    text-indent: 0;
+ 	display: block;
+  	line-height: initial;
 }
 .icon-reorder {
     visibility: hidden;
