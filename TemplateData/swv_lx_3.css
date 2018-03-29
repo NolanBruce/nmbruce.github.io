@@ -46,6 +46,7 @@ header {
 }
 .headerContainer .wrapper .nameScoreButtonWrapper .name {
     font-weight: 0
+    right: 0;
 }
 .headerContainer .wrapper .nameScoreButtonWrapper .optionsToggle {
     /*
