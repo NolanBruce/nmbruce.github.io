@@ -36,6 +36,7 @@ header {
     right: 0%;
 }
 .headerContainer .wrapper .nameScoreButtonWrapper {
+	right: 0;
     height: 120%;
     width: 100%;
 }
