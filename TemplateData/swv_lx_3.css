@@ -73,6 +73,7 @@ header {
     text-indent: 0;
  	display: block;
   	line-height: initial;
+  	top: -50%;
 }
 .icon-reorder {
     visibility: hidden;
