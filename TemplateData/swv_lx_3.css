@@ -82,8 +82,12 @@ header {
   	font-size: large;
 }
 
+/*
+* Specific style for landscape mobile
+*/
 @media only screen
-	and (max-device-width: 850px) {
+	and (max-device-width: 850px) 
+	and (orientation: landscape) {
 	.headerContainer .wrapper .nameScoreButtonWrapper .optionsToggle::after {
     /*
     background: url(https://nmbruce.github.io/TemplateData/Menu.png) no-repeat;
@@ -97,7 +101,7 @@ header {
   	line-height: 0;
   	position: fixed;
   	top: 3%;
-  	right: .5%;
+  	right: 1%;
   	font-size: large;
 }
 
