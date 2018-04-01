@@ -83,7 +83,7 @@ header {
 }
 
 @media only screen
-	and (max-width: 850)
+	and (max-width: 850px)
 	and (orientation: landscape) {
 	.headerContainer .wrapper .nameScoreButtonWrapper .optionsToggle::after {
     /*
