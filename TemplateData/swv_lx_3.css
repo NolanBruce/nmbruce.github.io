@@ -52,6 +52,7 @@ header {
     background: url(https://nmbruce.github.io/TemplateData/Menu.png) no-repeat;
     background-size: 100% 100%;
     */
+    /*To do: change background color to black*/
     font-family: open_sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
     float: right;
     width: 8%;
@@ -68,13 +69,15 @@ header {
     background: url(https://nmbruce.github.io/TemplateData/Menu.png) no-repeat;
     background-size: 100% 100%;
     */
+    /*To do: change text color to white*/
     content: 'Menu';
     text-indent: 0;
  	display: block;
  	color: black;
   	line-height: initial;
-  	position: relative;
-  	top: -25px;
+  	position: absolute;
+  	float: inherit;
+  	top: 12%;
 }
 .icon-reorder {
     visibility: hidden;
