@@ -65,9 +65,6 @@ header {
     z-index: 1000;
 }
 
-header .optionsToggle, header .beagleAppListToggle {
-	background-color: black;
-}
 .headerContainer .wrapper .nameScoreButtonWrapper .optionsToggle::after {
     /*
     background: url(https://nmbruce.github.io/TemplateData/Menu.png) no-repeat;
@@ -80,10 +77,33 @@ header .optionsToggle, header .beagleAppListToggle {
  	color: white;
   	line-height: 0;
   	position: fixed;
-  	top: 2.5%;
-  	right: 2%;
+  	top: 2.75%;
+  	right: 2.5%;
   	font-size: large;
 }
+
+@media only screen
+	and (max-width: 850)
+	and (orientation: landscape) {
+	.headerContainer .wrapper .nameScoreButtonWrapper .optionsToggle::after {
+    /*
+    background: url(https://nmbruce.github.io/TemplateData/Menu.png) no-repeat;
+    background-size: 100% 100%;
+    */
+    /*To do: change text color to white*/
+    content: 'Menu';
+    text-indent: 0;
+ 	display: block;
+ 	color: white;
+  	line-height: 0;
+  	position: fixed;
+  	top: 3%;
+  	right: 1.5%;
+  	font-size: large;
+}
+
+	}
+
 .icon-reorder {
     visibility: hidden;
 }
