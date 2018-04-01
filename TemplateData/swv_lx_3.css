@@ -64,6 +64,10 @@ header {
     position: relative;
     z-index: 1000;
 }
+
+header .optionsToggle, header .beagleAppListToggle {
+	background-color: black;
+}
 .headerContainer .wrapper .nameScoreButtonWrapper .optionsToggle::after {
     /*
     background: url(https://nmbruce.github.io/TemplateData/Menu.png) no-repeat;
@@ -73,7 +77,7 @@ header {
     content: 'Menu';
     text-indent: 0;
  	display: block;
- 	color: black;
+ 	color: white;
   	line-height: 0;
   	position: fixed;
   	top: 2.5%;
