@@ -74,9 +74,9 @@ header {
     text-indent: 0;
  	display: block;
  	color: black;
-  	line-height: initial;
+  	line-height: 0;
   	position: fixed;
-  	top: 1%;
+  	top: 2.5%;
   	right: 2%;
 }
 .icon-reorder {
