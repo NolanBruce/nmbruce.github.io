@@ -94,14 +94,14 @@ header {
     background-size: 100% 100%;
     */
     /*To do: change text color to white*/
-    content: 'Mobile';
+    content: 'Menu';
     text-indent: 0;
  	display: block;
  	color: white;
   	line-height: 0;
   	position: fixed;
   	top: 3%;
-  	right: 1%;
+  	right: 2%;
   	font-size: large;
 }
 
