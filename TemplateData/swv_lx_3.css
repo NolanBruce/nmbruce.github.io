@@ -82,6 +82,7 @@ header .optionsToggle, header .beagleAppListToggle {
   	position: fixed;
   	top: 2.5%;
   	right: 2%;
+  	font-size: large;
 }
 .icon-reorder {
     visibility: hidden;
