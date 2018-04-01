@@ -75,9 +75,9 @@ header {
  	display: block;
  	color: black;
   	line-height: initial;
-  	position: absolute;
-  	float: inherit;
-  	top: 12%;
+  	position: fixed;
+  	top: 1%;
+  	right: 2%;
 }
 .icon-reorder {
     visibility: hidden;
