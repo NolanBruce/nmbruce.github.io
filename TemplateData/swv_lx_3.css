@@ -47,18 +47,21 @@ header {
 .headerContainer .wrapper .nameScoreButtonWrapper .name {
     font-weight: 0
 }
+/*
+    NB:04/02/2018
+    Adjust menu button to match other top ENV bar buttons as closely as possible
+*/
 .headerContainer .wrapper .nameScoreButtonWrapper .optionsToggle {
     /*
     background: url(https://nmbruce.github.io/TemplateData/Menu.png) no-repeat;
     background-size: 100% 100%;
     */
-    /*To do: change background color to black*/
     font-family: open_sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
     float: right;
     width: 8%;
     height: 100%;
     color: black;
-    background-color: black;
+    background-color: black; /*Background color overwritten by rel css file*/
     border: 2px solid #1753b5;;
     outline: none;
     position: relative;
