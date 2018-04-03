@@ -507,15 +507,14 @@ aside.minimized .navigationToggle:focus {
     bottom: 10% !important;
     right: 10% !important;
 }
-/*  
+
 .simIFrame .stageContainer #stage-stage .content {
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    margin: -275px 0 0 -450px !important;
+    position: fixed !important;
+    top: 100% !important;
+    left: 100% !important;
+    margin: 0px 0 0 -0px !important;
     box-shadow: none !important
 }   
-*/
 .simIFrame .checkContainer {
     position: absolute !important;
     height: 0px !important;
