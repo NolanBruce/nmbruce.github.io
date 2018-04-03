@@ -533,7 +533,7 @@ aside.minimized .navigationToggle:focus {
 }
 
 .simIFrame iframe#simIFrame {
-    position: static;
+    position: fixed !important;
     width: 100% !important;
     height: 100% !important;
 }
