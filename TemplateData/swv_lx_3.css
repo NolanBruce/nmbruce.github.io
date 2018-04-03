@@ -441,6 +441,15 @@ aside.minimized .navigationToggle:focus {
     top: -0px;
     right: 0px;
 }
+
+.mainView .lessonView {
+    width: 100% !important;
+    height: 100% !important;
+    position: static !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
 .mainView .feedbackContainer .bottomContainer .toggleFeedbackBtn {
     width: 0px;
     height: 0px;
@@ -546,8 +555,8 @@ aside.minimized .navigationToggle:focus {
 
 .simIFrame .anchored {
   position: inherit !important;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 
 header .optionsPanel .option.logoutOption {
