@@ -5,7 +5,8 @@ function toggleFull() {
 	var frame = document.getElementById("gameContainer");
 	if (!document.isFullScreen && !document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
 		console.log ("Attempting to enter fullscreen");
-		var gl = frame.getContext("webgl");
+		var canvas = document.getElementById("#canvas");
+		var gl = canvas.getContext("webgl");
 		if(frame.requestFullScreen) {
 			console.log("standardFull");
 			frame.requestFullScreen();
