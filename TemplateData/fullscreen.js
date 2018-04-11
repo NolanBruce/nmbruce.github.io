@@ -6,26 +6,25 @@ function toggleFull() {
 	if (!document.isFullScreen && !document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
 		console.log ("Attempting to enter fullscreen");
 		var canvas = document.getElementById("#canvas");
-		var gl = canvas.getContext("webgl");
 		if(frame.requestFullScreen) {
 			console.log("standardFull");
 			frame.requestFullScreen();
-			resize(gl.canvas);
+			resize(canvas);
 			//addExit();
 		} else if (frame.mozRequestFullscreen) {
 			console.log("mozFull");
 			frame.mozRequestFullscreen();
-			resize(gl.canvas);
+			resize(canvas);
 			//addExit();
 		} else if (frame.webkitRequestFullscreen) {
 			console.log("webkitFull");
 			frame.webkitRequestFullscreen();
-			resize(gl.canvas);
+			resize(canvas);
 			//addExit();
 		} else if (frame.msRequestFullscreen) {
 			console.log("msFull");
 			frame.msRequestFullscreen();
-			resize(gl.canvas);
+			resize(canvas);
 			//addExit();
 		} 
 	} else {
@@ -69,12 +68,15 @@ function resize(canvas) {
     // Lookup the size the browser is displaying the canvas.
     var displayWidth  = canvas.clientWidth;
     var displayHeight = canvas.clientHeight;
-
+    console.log("displayWidth: " + displayWidth);
+    console.log("displayHeight: " + displayHeight);
     // Check if the canvas is not the same size.
     if (canvas.width  != displayWidth ||
         canvas.height != displayHeight) {
 
       // Make the canvas the same size
+  		console.log("canvas.width: " + canvas.width);
+  		console.log("canvas.height: " + canvas.height);
       canvas.width  = displayWidth;
       canvas.height = displayHeight;
     }
