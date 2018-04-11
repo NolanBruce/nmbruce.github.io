@@ -5,21 +5,27 @@ function toggleFull() {
 	var frame = document.getElementById("gameContainer");
 	if (!document.isFullScreen && !document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
 		console.log ("Attempting to enter fullscreen");
+		var canvas = document.getElementById("canvas");
+		var gl = canvas.getContext("webgl");
 		if(frame.requestFullScreen) {
 			console.log("standardFull");
 			frame.requestFullScreen();
+			resize(gl.canvas);
 			//addExit();
 		} else if (frame.mozRequestFullscreen) {
 			console.log("mozFull");
 			frame.mozRequestFullscreen();
+			resize(gl.canvas);
 			//addExit();
 		} else if (frame.webkitRequestFullscreen) {
 			console.log("webkitFull");
 			frame.webkitRequestFullscreen();
+			resize(gl.canvas);
 			//addExit();
 		} else if (frame.msRequestFullscreen) {
 			console.log("msFull");
 			frame.msRequestFullscreen();
+			resize(gl.canvas);
 			//addExit();
 		} 
 	} else {
@@ -57,6 +63,22 @@ function addExit() {
 	}
 	document.getElementById("fullButton").style.visibility = 'hidden';
 }
+
+//taken from https://webglfundamentals.org/webgl/lessons/webgl-resizing-the-canvas.html
+function resize(canvas) {
+    // Lookup the size the browser is displaying the canvas.
+    var displayWidth  = canvas.clientWidth;
+    var displayHeight = canvas.clientHeight;
+
+    // Check if the canvas is not the same size.
+    if (canvas.width  != displayWidth ||
+        canvas.height != displayHeight) {
+
+      // Make the canvas the same size
+      canvas.width  = displayWidth;
+      canvas.height = displayHeight;
+    }
+  }
 
 //removes fullscreen button if 
 function checkSupport(){
