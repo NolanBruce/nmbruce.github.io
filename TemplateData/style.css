@@ -43,7 +43,7 @@ up in weird places on some Anrdoid devices
 .fullscreen {
 	position: absolute;
 	right: 0%;
-	top: 10%;
+	top: 7%;
 	border: blue;
 	z-index: 999;
 }
