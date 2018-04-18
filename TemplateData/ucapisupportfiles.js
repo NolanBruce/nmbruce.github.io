@@ -14734,17 +14734,11 @@ define ('main',['require','jquery','ExtendedModel','api/snapshot/adapters/Backbo
     // JOS: 12/9/2016
     window.storeUnityData = function (simId, key, value)
     {
-        console.log("Storing data");
-        console.log("simId: " + simId);
-        console.log("key: " + key);
         Transporter.setDataRequest(simId, key, value, storageSuccess, storageError);
     };
 
     window.getUnityData = function (simId, key)
     {
-        console.log("Getting data");
-        console.log("simId: " + simId);
-        console.log("key: " + key);
         Transporter.getDataRequest(simId, key, transmitDataToUnity, storageError);
     };
 
