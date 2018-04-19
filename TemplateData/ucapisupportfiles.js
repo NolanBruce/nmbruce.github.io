@@ -14769,10 +14769,6 @@ define ('main',['require','jquery','ExtendedModel','api/snapshot/adapters/Backbo
         }
     }
 
-    function reloadPage() {
-        window.location.reload();
-    }
-
 
 });
 
